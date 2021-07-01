@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pirmas {
+            color: rosybrown;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class='pirmas'>
+
+    </div>
+    <script>
+        'use strict';
+
+//         //switch sakiinys
+
+//         var siosDienosData = new Date();
+//         // var diena = siosDienosData.getDay(); //0-6
+//         var diena = 5;
+//         // nuo 0 iki 7, pirmad-sekmad;
+
+//         if(diena == 0) {
+//             console.log('sekmadienis');
+//         } else if(diena == 1) {
+//             console.log('pirmadienis');
+//         }
+//         else if(diena == 2) {
+//             console.log('antrad');
+//         }
+//         else if(diena == 3) {
+//             console.log('treciad');
+//         }
+//         else if(diena == 4) {
+//             console.log('ketvirtad');
+//         }
+//         else if(diena == 5) {
+//             console.log('penktad');
+//         }
+//         else if(diena == 6) {
+//             console.log('sestad');
+//         }
+//         else if(diena == 7) {
+//             console.log('tokios dienos nera');
+//         }
+
+
+//         // switche negali buti > ir <
+
+//         switch(diena) {
+//             case 0:
+//                 console.log('sekmadienis');
+//                 break;
+//             case 1:
+//                 console.log('pirmad');
+//                 break;
+//             case 2:
+//                 console.log('antrad');
+//                 break;
+//             case 3:
+//                 console.log('treciad');
+//                 break;
+//             case 4:
+//                 console.log('ketvirtad');
+//                 break;
+//             case 5:
+//                 console.log('penktad');
+//                 break;
+//             case 6:
+//                 console.log('sestad');
+//                 break;
+//             default:
+//                 console.log('tokios dienos nera');
+//         }
+        
+    
+//         // MASYVAS
+//         //101 DEZUTE SU NUMERIU VIDUJE
+
+//         var dezute1 = 1;
+//         var dezute2 = 2;
+
+
+//         var masyvas;
+//         masyvas = [1,2,3,4,5,6,7];
+//         console.log(masyvas);
+
+//         // atvaizduoti tik dezute, kurios numeris.....
+// //numeravimas visad prasideda nuo nulio !!!
+
+//         console.log(masyvas[3]);
+
+//         masyvas[0] = 'pirmas atnaujintas elementas';
+
+//         //tuscias masyvas
+
+//         var tusciasMasyvas = [];
+//         // tusciasMasyvas[0] = 'nulis';
+//         // tusciasMasyvas[1] = 'vienas';
+
+//         //     tusciasMasyvas.push('vienas');
+//         //     tusciasMasyvas.push('antras');
+
+
+//         // console.log(tusciasMasyvas);
+
+//         //ciklai - for
+
+//         for (var i = 0; i < 300; i++) { // <- apibreziam ciklo kintamaji, nustatome salyga iki kiek ciklas veiks (kol i maziau 15)
+//                                     // prie i pridedame +1 
+            
+//             tusciasMasyvas.push('vienas' + i);
+//                                     console.log(i);
+
+//         }
+//         // console.log(tusciasMasyvas);
+
+//         //atvaizduoti visas dezutes atskirai tusciasmasyvas101
+//         var masyvoIlgis = tusciasMasyvas.length;
+//         console.log(tusciasMasyvas.length);
+
+//         //masyvo ilgio reiksme
+
+//         for (var i = 0; i < masyvoIlgis; i++) {
+//             console.log(tusciasMasyvas[i]);
+//         }
+
+        //susumuoti skaicius esancius 9 elementu masyve
+
+        var skaiciuMasyvas = [10, 15, 12, 3, 4, 9, 80, 30, 90];
+        var suma = 0;
+
+        for (var i = 0; i < skaiciuMasyvas.length; i++) {
+            suma = suma + skaiciuMasyvas[i];
+        }
+
+        console.log(suma + ' skaiciu masyvo suma')
+
+//masyvas , kuriame kiekvienas elementas yra penkiazenklio skaitmuo
+
+var skaitmenys = [1, 2, 3, 4, 5];
+var daugyba = 1;
+
+for (var i = 0; i < skaitmenys.length; i++) {
+    daugyba = daugyba * skaitmenys.length;
+}
+console.log(daugyba + ' sudauginti visi skaiciai');
+
+
+
+//
+var aa = 11;
+
+while(aa > 10) {
+    console.log('labas');
+    aa--; // sumazinam aa vienu vnt
+}
+//n zenklio skaiciaus skaimenis isvesti atskirai
+
+var nsk = 65198198494984;
+
+// var sk1 = nsk % 10;
+// var sk2 = sk1 % 10;
+// var sk3 = sk2 % 10;
+// var sk4 = sk3 % 10;
+
+// console.log(sk2);
+
+while(nsk != 0) {
+    console.log(nsk % 10);
+    nsk = parseInt(nsk / 10);
+}
+
+    </script>
+</body>
+</html>
